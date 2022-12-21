@@ -1,0 +1,53 @@
+@media(max-width: 768px){
+    .header-content{
+        .logo{
+            margin-left: 20px
+        }
+    }  
+.main{
+    .main-content{
+        @include dFlex(center, center);
+        flex-direction: column-reverse;
+        text-align: center;
+        .main-text{
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+    }
+}
+    .skills-section{
+        .skills-title{
+            text-align: center;
+        }
+    }
+    .project-sections{
+    .project-title{
+        text-align: center;
+
+    }
+}
+}
+@media(max-width: 600px){
+    .header-content{
+        nav{
+            display: none
+        }
+       
+    }
+    .main{
+        .main-content{
+            .main-text{
+                h1{
+                    font-size: 32px;
+                    line-height: 30px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    .footer-content{
+        padding: 40px 0;
+       flex-direction: column;
+       row-gap: 30px;
+    }
+}
